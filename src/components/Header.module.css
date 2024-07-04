@@ -1,7 +1,7 @@
 /* src/components/Header.module.css */
 
 .header {
-    background-color: #4b79a1;
+    background: linear-gradient(to right, #4b79a1, #1a2980);
     padding: 20px; /* Increased padding for better spacing */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

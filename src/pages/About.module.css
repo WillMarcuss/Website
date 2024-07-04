@@ -177,12 +177,20 @@
     content: '';
     position: absolute;
     top: 20px;
-    right: -6px;
+    right: -6px; /* Adjust this */
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #fff;
     border: 2px solid #ccc;
+}
+
+.timelineItem:nth-child(odd)::before {
+    right: -18px;
+}
+
+.timelineItem:nth-child(even)::before {
+    left: -8px;
 }
 
 .timelineItem:nth-child(even::before) {
