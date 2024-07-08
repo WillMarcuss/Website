@@ -1,10 +1,21 @@
 .footer {
-    background-color: #4b79a1;
-    padding: 10px;
+    background-color: #222; /* Darker background color for a sleek look */
+    padding: 15px; /* Slightly increased padding for better spacing */
     text-align: center;
-    color: #fff;
-    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+    color: #fff; /* White text color */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-family: 'Roboto', sans-serif; /* Matching font family */
+}
+
+.footer a {
+    color: #bbb; /* Light grey color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.footer a:hover {
+    color: #fff; /* White color on hover */
 }

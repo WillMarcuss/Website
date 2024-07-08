@@ -4,7 +4,7 @@
     text-align: center;
     padding: 50px;
     padding-bottom: 100px;
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    background: #7f7f7f; /* Light grey background */
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -13,12 +13,13 @@
 .heading {
     font-size: 3em;
     margin-bottom: 20px;
+    color: #333; /* Dark text color */
     animation: fadeIn 1s ease-out;
 }
 
 .paragraph {
     font-size: 1.5em;
-    color: #000000;
+    color: #666; /* Medium grey text color */
     animation: fadeIn 2s ease-out;
 }
 
@@ -33,9 +34,23 @@
     }
 }
 
+@keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+
 .aboutMe {
+    margin-top: 150px;
     margin-bottom: 30px;
-    background-color: #ffffff; /* Light gray background */
+    background-color: #fff; /* White background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -50,10 +65,11 @@
 .section {
     flex: 1 1 calc(33.33% - 20px); /* Flex basis for each section */
     padding: 20px;
-    background-color: #ffffff; /* White background */
+    background-color: #fff; /* White background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    animation: zoomIn 3s ease-out;
 }
 
 .section:hover {
@@ -69,7 +85,7 @@
 
 .section p {
     font-size: 1rem; /* Section paragraph font size */
-    color: #666; /* Medium gray text color */
+    color: #666; /* Medium grey text color */
 }
 
 .logos {
@@ -167,7 +183,7 @@
 
 .timelineContent {
     position: relative;
-    background: #ffffff;
+    background: #fff; /* White background */
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -177,7 +193,7 @@
     content: '';
     position: absolute;
     top: 20px;
-    right: -6px; /* Adjust this */
+    right: -6px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -201,13 +217,13 @@
 .timeline h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #333;
+    color: #333; /* Dark text color */
 }
 
 .timeline p {
     margin: 5px 0 0;
     font-size: 1rem;
-    color: #666;
+    color: #666; /* Medium grey text color */
 }
 
 .timelineItem.current::before {

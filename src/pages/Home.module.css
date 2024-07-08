@@ -1,14 +1,14 @@
-/* src/pages/Home.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .container {
   text-align: center;
   padding: 50px;
-  background: linear-gradient(to right, #1a2980, #26d0ce);
+  background: linear-gradient(to right, #333, #555); /* Darker gradient for sleek look */
   color: #fff;
   font-family: 'Roboto', sans-serif;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 140px;
 }
 
 .heading {
@@ -55,7 +55,7 @@
 }
 
 .contact-button {
-  background-color: #333;
+  background-color: #444; /* Darker button background */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -65,5 +65,5 @@
 }
 
 .contact-button:hover {
-  background-color: #555;
+  background-color: #666; /* Slightly lighter on hover */
 }
