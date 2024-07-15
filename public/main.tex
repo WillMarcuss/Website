@@ -1,0 +1,271 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{William Marcus} % Your Name
+\newcommand{\course}{Computer Science: Management and Business Systems} % Your Program
+\newcommand{\phone}{613-220-4407} % Your Phone Number
+\newcommand{\emaila}{williammarcus@cmail.carleton.ca} %Email 1
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +1-\phone}\\
+  {4313 Totem Dr\roll} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {Ottawa, Ontario} &  \color{blue}\href{http://github.com/willMarcuss/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+  {K1V 1L6} & \color{blue}\href{https://www.linkedin.com/in/wmarcus1/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+\end{tabularx}
+}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University}{Overall CGPA: 10.82/12 | Major GPA: 11.10/12}
+      {Bachelor of Computer Science Honours (Co-op)}{3rd Year Standing}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+%-----------EXPERIENCE-----------------
+
+
+
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Bank of Canada}{Ottawa, Ontario}
+      {Full-stack Developer}{May 2024-August 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Developed PHP, JavaScript, HTML \& CSS in 5 of the Banks major websites including BankofCanada.ca}
+    \item {Collaborated with colleagues, and presented solutions for bugs and broken code on the websites}
+    \item {Worked in an agile team with code review processes, daily scrum meetings, and weekly sprint plannings}
+    \item {Thoroughly tested code using PHPunit and Behat tests to ensure effective and non-broken code}
+    \item {Peer reviewed colleagues code to ensure effectiveness and efficiency}
+    \resumeItemListEnd
+  \vspace{-3.0mm}
+    \resumeSubheading
+      {Bank of Canada}{Ottawa, Ontario}
+      {Application Developer}{May 2023-March 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Migrated Jira application data to upgraded version in JavaScript using Node, Axios \& REST API}
+    \item {Programmed in Javascript with various tools such as React js for more efficient and user friendly interfaces}
+    \item {Created a ticket management tool using Node js to archive and keep track of requests}
+    \item {Completed code review processes through Azure DevOps to ensure correct and effective code}
+    \item {Developed virtual spaces for clients based on their needs and requirements in Jira and Confluence}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+ \resumeProject
+      {Health and Fitness Club Management System} %Project Name
+      {\color{blue}https://github.com/WillMarcuss/Health-and-Fitness-Club-Management-System    } %Project Name, Location Name
+      {April 2024} %Event Dates
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: Python, PostgreSQL}
+        \item {This project is a management system for a fitness club that manages admins, members and trainers, and allows these users to access their own interface, and manage their functionalities such as registering, booking classes, PT sessions, etc.}
+        
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+      {Recipe Search} %Project Name
+      {\color{blue}https://github.com/WillMarcuss/RecipeSearch    } %Project Name, Location Name
+      {May 2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: JavaScript, Node js, HTML, CSS, Edamam API}
+        \item {This project is a tool hosted on a local server that allows users to search for recipes based on various parameters such as ingredients, type of meal, calories, etc, using the Edamam API.}
+        
+    \resumeItemListEnd
+    \vspace{-2mm}
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills}}
+\begin{itemize}[leftmargin=0.05in, label={}]
+    \itemsep0.5mm
+    \item \textbf{Languages:} Java, Python, C, C++, JavaScript, HTML, CSS, SQL, PHP 
+    \item \textbf{Concepts:} OO Programming, Data Structures, Polymorphism, Inheritance, Encapsulation
+    \item \textbf{Frameworks/Libraries:} Java Swing, JavaFx, Java AWT, Pygame, Node.js, React.js, Angular.js, REST API, Axios
+\end{itemize}
+\vspace{-10pt}
+
+
+
+%-----------Related Skills-----------------
+\section{\textbf{Related Skills}}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=0.05in, label={}]
+    \item \textbf{Languages:} Fluent in French and English; oral, reading, and writing
+    \item \textbf{Problem Solving:} Debugging, Behat tests, PHPunit
+    \item \textbf{Communication:} Peer Programming, Daily Scrum
+    \item \textbf{Time Management:} Sprint planning, Prioritization, Agile Task Management, Time blocking
+\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\resumeSubHeadingListStart
+\resumePOR{C J Mackenzie Scholarship: }{Yearly Scholarship achieved by retaining a 10.82 overall GPA}{September 2023}
+\resumePOR{Deans Honours List: }{Award given by achieving a minimum of 10.0 GPA}{May 2024}
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
