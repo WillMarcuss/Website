@@ -76,7 +76,8 @@
     background-color: #555;
   }
   
-  .resumeLink {
+  .resumeLink,
+  .linkedinLink {
     display: inline-block;
     font-size: 1.2em;
     color: #333;
@@ -86,9 +87,11 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
+    margin: 10px 0;
   }
   
-  .resumeLink:hover {
+  .resumeLink:hover,
+  .linkedinLink:hover {
     background-color: #ddd;
   }
   

@@ -16,6 +16,15 @@ const Contact = () => {
       <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.resumeLink}>
         View My Resume
       </a>
+      <p>You can also find me on LinkedIn:</p>
+      <a 
+        href="https://www.linkedin.com/in/wmarcus1/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className={styles.linkedinLink}
+      >
+        Visit My LinkedIn Profile
+      </a>
     </div>
   );
 };
