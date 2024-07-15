@@ -7,6 +7,8 @@ import htmlLogo from './images/sql.jpeg';
 import cssLogo from './images/React.png';
 import jsLogo from './images/JS.webp';
 import reactLogo from './images/cplus.png';
+import javaLogo from './images/java.webp';
+import pythonLogo from './images/python.webp'
 
 const About = () => {
   return (
@@ -31,6 +33,8 @@ const About = () => {
             <img src={cssLogo} alt="CSS Logo" className={`${styles.logo} ${styles.cssLogo}`} />
             <img src={jsLogo} alt="JavaScript Logo" className={`${styles.logo} ${styles.jsLogo}`} />
             <img src={reactLogo} alt="React Logo" className={`${styles.logo} ${styles.reactLogo}`} />
+            <img src={javaLogo} alt="Java Logo" className={`${styles.logo} ${styles.javaLogo}`} />
+            <img src={pythonLogo} alt="Java Logo" className={`${styles.logo} ${styles.pythonLogo}`} />
           </div>
         </div>
 
