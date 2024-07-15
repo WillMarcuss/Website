@@ -1,10 +1,12 @@
+// src/pages/Projects.js
+
 import React from 'react';
 import styles from './Projects.module.css';
 
 const projects = [
   {
     title: 'Health and Fitness Club Management System',
-    description: 'This project is a management system that allows three users: Members, Trainers, and Admins to access their respective dashboard, and manage their functionalities such as  registering, booking classes, PT sessions, etc',
+    description: 'This project is a management system that allows three users: Members, Trainers, and Admins to access their respective dashboard, and manage their functionalities such as registering, booking classes, PT sessions, etc.',
     link: 'https://github.com/WillMarcuss/Health-and-Fitness-Club-Management-System'
   },
   {
@@ -33,6 +35,12 @@ const Projects = () => {
             </a>
           </div>
         ))}
+      </div>
+      <div className={styles['github-link-container']}>
+        <p>If you would like to see more of my work, please visit my GitHub profile:</p>
+        <a href="https://github.com/WillMarcuss" className={styles['github-link']} target="_blank" rel="noopener noreferrer">
+          Visit My GitHub Profile
+        </a>
       </div>
     </div>
   );
