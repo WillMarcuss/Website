@@ -55,7 +55,7 @@ const About = () => {
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineContent}>
-                <h3>Expected 2026</h3>
+                <h3>Expected April 202</h3>
                 <p>Graduation</p>
               </div>
             </div>
