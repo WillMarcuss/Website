@@ -3,7 +3,7 @@ import styles from './About.module.css';
 import { motion } from 'framer-motion';
 
 // Import the logos
-import htmlLogo from './images/sql.jpeg';
+import htmlLogo from './images/SQLLOGO.png';
 import cssLogo from './images/React.png';
 import jsLogo from './images/JS.webp';
 import reactLogo from './images/cplus.png';
@@ -83,7 +83,7 @@ const About = () => {
                 <p>Full-Stack Developer at Bank of Canada (Co-op)</p>
               </div>
             </div>
-            <div className={`${styles.timelineItem}`}>
+            <div className={`${styles.timelineItem} ${styles.current}`}>
               <div className={styles.timelineContent}>
                 <h3>January 2025 - August 2025</h3>
                 <p>Term TBD</p>
