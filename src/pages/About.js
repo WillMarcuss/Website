@@ -67,20 +67,26 @@ const About = () => {
           <div className={styles.timeline}>
             <div className={styles.timelineItem}>
               <div className={styles.timelineContent}>
-                <h3>2022</h3>
+                <h3>May 2022 - April 2023</h3>
                 <p>Project Management Service Student at Canada Revenue Agency</p>
               </div>
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineContent}>
-                <h3>2023</h3>
+                <h3>May 2023 - April 2024</h3>
                 <p>Application Developer at Bank of Canada (Co-op)</p>
               </div>
             </div>
-            <div className={`${styles.timelineItem} ${styles.current}`}>
+            <div className={`${styles.timelineItem}`}>
               <div className={styles.timelineContent}>
-                <h3>2024</h3>
+                <h3>May 2024 - August 2024</h3>
                 <p>Full-Stack Developer at Bank of Canada (Co-op)</p>
+              </div>
+            </div>
+            <div className={`${styles.timelineItem}`}>
+              <div className={styles.timelineContent}>
+                <h3>January 2025 - August 2025</h3>
+                <p>Term TBD</p>
               </div>
             </div>
           </div>
