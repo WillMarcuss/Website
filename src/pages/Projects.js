@@ -10,7 +10,7 @@ const projects = [
     link: 'https://github.com/WillMarcuss/Health-and-Fitness-Club-Management-System'
   },
   {
-    title: 'Recipe Search',
+    title: 'Recipe Search.',
     description: 'This project is a tool that allows users to search for recipes based on various parameters such as ingredients, type of meal, calories, etc, using the Edamam API.',
     link: 'https://github.com/WillMarcuss/RecipeSearch'
   },
