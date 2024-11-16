@@ -11,14 +11,14 @@
 }
 
 .heading {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
     color: #333; /* Dark text color */
     animation: fadeIn 1s ease-out;
 }
 
 .paragraph {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #666; /* Medium grey text color */
     animation: fadeIn 2s ease-out;
 }
@@ -36,38 +36,40 @@
 
 @keyframes zoomIn {
     from {
-        transform: scale(0.5);
-        opacity: 0;
+      transform: scale(0.5);
+      opacity: 0;
     }
     to {
-        transform: scale(1);
-        opacity: 1;
+      transform: scale(1);
+      opacity: 1;
     }
-}
+  }
+  
+  
 
 .aboutMe {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 30px;
     background-color: #fff; /* White background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    animation: zoomIn 1s ease-out;
 }
 
 .sectionsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    gap: 20px; /* Space between sections */
 }
 
 .section {
+    flex: 1 1 calc(33.33% - 20px); /* Flex basis for each section */
     padding: 20px;
     background-color: #fff; /* White background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
-    animation: zoomIn 1s ease-out;
+    animation: zoomIn 3s ease-out;
 }
 
 .section:hover {
@@ -105,15 +107,52 @@
     0%, 100% {
         transform: translate(0, 0);
     }
-    25% {
+    12.5% {
         transform: translate(50px, 50px);
     }
+    25% {
+        transform: translate(60px, 0);
+    }
+    37.5% {
+        transform: translate(50px, 20px);
+    }
     50% {
-        transform: translate(-50px, 0);
+        transform: translate(0, 0);
+    }
+    62.5% {
+        transform: translate(-10px, -20px);
     }
     75% {
-        transform: translate(-50px, -50px);
+        transform: translate(-20px, 0);
     }
+    87.5% {
+        transform: translate(-10px, 20px);
+    }
+}
+
+/* Add different animation durations for each logo */
+.htmlLogo {
+    animation-duration: 7s;
+}
+
+.cssLogo {
+    animation-duration: 9s;
+}
+
+.jsLogo {
+    animation-duration: 8s;
+}
+
+.reactLogo {
+    animation-duration: 6s;
+}
+
+.javaLogo {
+    animation-duration: 7s;
+}
+
+.javaLogo {
+    animation-duration: 9s;
 }
 
 /* Timeline styles */
@@ -175,7 +214,12 @@
 }
 
 .timelineItem:nth-child(even)::before {
-    left: -18px;
+    left: -8px;
+}
+
+.timelineItem:nth-child(even::before) {
+    left: -6px;
+    right: auto;
 }
 
 .timeline h3 {
@@ -194,6 +238,7 @@
     background: #333; /* Dark background for the current circle */
     border-color: #333; /* Dark border for the current circle */
     color: #fff; /* White text color */
+    font-weight: bold; /* Bold font weight */
 }
 
 .timelineItem.current .timelineContent {
