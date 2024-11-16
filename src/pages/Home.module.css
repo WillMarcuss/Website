@@ -28,7 +28,12 @@
   height: 250px;
   border-radius: 50%;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.profile-pic:hover {
+  transform: rotate(360deg) translateY(-10px); /* Spins and moves up */
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Emits glowing shadow */
 }
 
 .section {
