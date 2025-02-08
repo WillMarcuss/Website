@@ -56,6 +56,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
+.aboutMe:hover{
+    transform: rotate(360deg) translateY(-10px); /* Spins and moves up */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); 
+}
+
 .sectionsContainer {
     display: flex;
     flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
