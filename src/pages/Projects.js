@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: 'Finance Tracker',
-    description: 'This project is an all in one tool that allows users to manage their finances by adding transactions, setting budgets, viewing spending trends, generating financial reports, and much more. ',
+    description: 'Finance Tracker is a modern financial management application that helps users track their expenses, manage budgets, and analyze spending habits with visual reports and statistical insights.',
     link: 'https://github.com/WillMarcuss/FinanceTracker'
   },
   {
