@@ -5,26 +5,26 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
-    title: 'Health and Fitness Club Management System',
-    description: 'This project is a management system that allows three users: Members, Trainers, and Admins to access their respective dashboard, and manage their functionalities such as registering, booking classes, PT sessions, etc.',
-    link: 'https://github.com/WillMarcuss/Health-and-Fitness-Club-Management-System'
+    title: 'AI Maze Runner Project',
+    description: 'The Maze Runner project is a Python-based application to solve dynamic mazes using artificial intelligence techniques. It employs Q-learning, artificial life for dynamic wall updates, and rule-based systems for moving obstacles (grievers) to challenge the maze-solving capabilities of an agent.',
+    link: 'https://github.com/WillMarcuss/mazeRunner'
   },
   {
-    title: 'Recipe Search.',
-    description: 'This project is a tool that allows users to search for recipes based on various parameters such as ingredients, type of meal, calories, etc, using the Edamam API.',
-    link: 'https://github.com/WillMarcuss/RecipeSearch'
+    title: 'Finance Tracker',
+    description: 'This project is an all in one tool that allows users to manage their finances by adding transactions, setting budgets, viewing spending trends, generating financial reports, and much more. ',
+    link: 'https://github.com/WillMarcuss/FinanceTracker'
   },
   {
-    title: 'Translator Chrome Extension',
-    description: 'This project is a simple implementation of a google translator chrome extension that allows you to use google translate as a chrome extension.',
-    link: 'https://github.com/WillMarcuss/Translator-Chrome-Extension'
+    title: 'AI Facial Recognition',
+    description: 'This project is a Facial Emotion Recognition System that uses Deep Learning and Computer Vision techniques to detect emotions from images or real-time video streams. The system classifies faces into one of seven emotions: angry, disgust, fear, happy, sad, surprise, and neutral.',
+    link: 'https://github.com/WillMarcuss/AIFacialRecognition'
   }
 ];
 
 const Projects = () => {
   return (
     <div className={styles['projects-container']}>
-      <h2 className={styles['projects-heading']}>My Projects</h2>
+      <h2 className={styles['projects-heading']}>Highlighted Projects</h2>
       <div className={styles['projects-grid']}>
         {projects.map((project, index) => (
           <div key={index} className={styles['project-card']}>
