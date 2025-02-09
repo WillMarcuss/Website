@@ -26,7 +26,7 @@ const About = () => {
         <div className={styles.section}>
           <h2>Who Am I</h2>
           <p>
-            My name is William Marcus, I am 20 years old, and live in Ottawa, Ontario. I have a passion for coding and development.
+            My name is William Marcus, I am 21 years old, and live in Ottawa, Ontario. I have a passion for coding and development.
           </p>
           <div className={styles.logos}>
             <img src={htmlLogo} alt="HTML Logo" className={`${styles.logo} ${styles.htmlLogo}`} />
