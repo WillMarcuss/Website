@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2em;
+  }
+  .subheading {
+    font-size: 0.5em;
+  }
+  .profile-pic{
+    width: 100px;
+    height: 100px;
+  }
+  
+}
+
 .container {
   text-align: center;
-  padding: 50px;
+  padding-top: 150px;
   background: linear-gradient(to right, #333, #555); /* Darker gradient for sleek look */
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -25,7 +39,6 @@
   width: 275px;
   height: 250px;
   border-radius: 50%;
-  margin-top: 100px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 

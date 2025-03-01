@@ -1,3 +1,12 @@
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav a {
+    margin: 10px 0;
+  }
+}
+
 .header {
     background: linear-gradient(to right, #333, #555); /* Using the updated color theme */
     padding: 5px; /* Increased padding for better spacing */
