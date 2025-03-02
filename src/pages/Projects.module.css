@@ -48,6 +48,21 @@
   color: #ddd;
 }
 
+@media (max-width: 768px) {
+  .projects-heading{
+    margin-top: 150px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-description {
+    font-size: 0.9em;
+  }
+}
+
 .project-link {
   display: inline-block;
   margin-top: 10px;
