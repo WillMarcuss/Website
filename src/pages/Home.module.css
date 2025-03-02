@@ -1,19 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-@media (max-width: 768px) {
-  .heading {
-    font-size: 2em;
-  }
-  .subheading {
-    font-size: 0.5em;
-  }
-  .profile-pic{
-    width: 100px;
-    height: 100px;
-  }
-  
-}
-
 .container {
   text-align: center;
   padding-top: 150px;
@@ -83,4 +68,19 @@
 
 .contact-button:hover {
   background-color: #666; /* Slightly lighter on hover */
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2em;
+  }
+  .subheading {
+    font-size: 1em;
+  }
+  .profile-pic{
+    width: 138px;
+    height: 125px;
+    margin-top: 50px;
+  }
+  
 }
