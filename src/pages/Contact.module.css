@@ -95,3 +95,8 @@
     background-color: #ddd;
   }
   
+  @media (max-width: 768px) {
+    .linkedinLink {
+      margin-bottom: 50px;
+    }
+  }
