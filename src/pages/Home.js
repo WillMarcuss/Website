@@ -21,9 +21,6 @@ const Home = () => {
   return (
     <motion.div
       className={styles.container}
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
     >
       <img
         src={profilePic} // Replace with your profile picture URL

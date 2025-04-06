@@ -23,12 +23,24 @@
   gap: 20px;
 }
 
+@keyframes slideIn {
+  from {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
 .project-card {
   background: #444;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 1s ease-out;
 }
 
 .project-card:hover {
@@ -45,6 +57,7 @@
 .project-description {
   font-size: 1em;
   color: #ddd;
+  animation: slideIn 1s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -82,4 +95,5 @@
   padding: 20px;
   background-color: #333;
   border-radius: 10px;
+  animation: slideIn 1s ease-out;
 }
