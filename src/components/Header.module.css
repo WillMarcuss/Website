@@ -8,8 +8,8 @@
 }
 
 .header {
-    background: linear-gradient(to right, #333, #555); /* Using the updated color theme */
-    padding: 5px; /* Increased padding for better spacing */
+  background: linear-gradient(135deg, #2c3e50, #1a252f);
+  padding: 5px; /* Increased padding for better spacing */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease; /* Smooth transition for background color change */

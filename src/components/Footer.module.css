@@ -1,5 +1,5 @@
 .footer {
-    background-color: #222; /* Darker background color for a sleek look */
+    background: linear-gradient(135deg, #2c3e50, #1a252f);
     padding: 15px; /* Slightly increased padding for better spacing */
     text-align: center;
     color: #fff; /* White text color */

@@ -2,8 +2,7 @@
 .container {
   text-align: center;
   padding-top: 150px;
-  background: linear-gradient(to right, #333, #555); /* Darker gradient for sleek look */
-  color: #fff;
+  background: linear-gradient(135deg, #2c3e50, #1a252f);
   font-family: 'Roboto', sans-serif;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -14,10 +13,12 @@
   font-size: 3em;
   margin-bottom: 20px;
   animation: fadeIn 1s ease-out;
+  color: #f1f1f1;
 }
 
 .subheading {
   font-size: 1.5em;
+  color: #f1f1f1;
 }
 
 .profile-pic {
@@ -25,6 +26,7 @@
   height: 250px;
   border-radius: 50%;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Emits glowing shadow */
 }
 
 .profile-pic:hover {
@@ -39,6 +41,7 @@
 .section-heading {
   font-size: 2em;
   margin-bottom: 20px;
+  color: #f1f1f1;
 }
 
 .project {
