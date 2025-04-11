@@ -14,7 +14,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
     color: #fff; /* White text color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example of different font family */
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
     position: fixed; /* Fix the header at the top */
     width: 100%; /* Make sure it spans the full width of the page */
     top: 0; /* Position it at the top */
