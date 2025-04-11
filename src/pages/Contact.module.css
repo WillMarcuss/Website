@@ -81,4 +81,8 @@
   .contactInfo {
     font-size: 1.1em;
   }
+
+  .container {
+    margin-top: 100px;
+  }
 }
