@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import { motion } from 'framer-motion';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { useTypewriter } from 'react-simple-typewriter';
 import profilePic from './images/profile.jpg';
 
 const Home = () => {
@@ -28,11 +28,18 @@ const Home = () => {
         className={styles['profile-pic']}
       />
       <h1 className={styles.heading}>Hi, I'm William Marcus</h1>
-      <p className={styles.subheading}>
-        {text}
-        <Cursor />
-      </p>
+      <div className={styles.terminal}>
+        <pre>
+          <code>
+            wmsh ~ % Initializing Portfolio... <br />
+            wmsh ~ % Loading Information About William Marcus... <br />
+            wmsh ~ % Status: {text}<span className={styles.blink}>█</span>
+          </code>
+        </pre>
+      </div>
+
     </motion.div>
+
   );
 };
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .container {
   text-align: center;
   padding-top: 150px;
@@ -13,13 +14,13 @@
   font-size: 3em;
   margin-bottom: 20px;
   color: #f1f1f1;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .subheading {
   font-size: 1.5em;
   color: #39FF14;
-  font-family:monospace;
+  font-family: monospace;
 }
 
 .profile-pic {
@@ -27,12 +28,15 @@
   height: 250px;
   border-radius: 50%;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Emits glowing shadow */
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+  /* Emits glowing shadow */
 }
 
 .profile-pic:hover {
-  transform: rotate(360deg) translateY(-10px); /* Spins and moves up */
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Emits glowing shadow */
+  transform: rotate(360deg) translateY(-10px);
+  /* Spins and moves up */
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+  /* Emits glowing shadow */
 }
 
 .section {
@@ -54,9 +58,41 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+.terminal {
+  background-color: #012456;
+  color: #1E90FF;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #1E90FF;
+  border: 1px solid #012456;
+  white-space: pre-wrap;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.terminal code {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 
@@ -64,13 +100,31 @@
   .heading {
     font-size: 2em;
   }
+
   .subheading {
     font-size: 1em;
+    white-space: normal;
+    /* Allow wrapping */
+    word-wrap: break-word;
+    /* Break long words if needed */
+    
   }
-  .profile-pic{
+
+  .profile-pic {
     width: 138px;
     height: 125px;
     margin-top: 50px;
   }
-  
+
+  .terminal {
+    width: 300px;
+  }
+
+  .terminal code {
+    font-size: 0.5em;
+    line-height: 1.6;
+    white-space: normal;
+    /* Allow wrapping */
+    word-wrap: break-word;
+  }
 }
