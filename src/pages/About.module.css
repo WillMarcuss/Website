@@ -39,6 +39,16 @@
     opacity: 1;
   }
 }
+@keyframes slideInFromTop {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 .aboutMe {
   margin-top: 150px;
@@ -50,7 +60,7 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  animation: slideIn 1s ease-out;
+  animation: slideInFromTop 1s ease-out;
   font-family: 'Times New Roman', Times, serif;
 }
 
