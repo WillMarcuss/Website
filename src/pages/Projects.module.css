@@ -15,6 +15,7 @@
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .projects-grid {
@@ -35,12 +36,14 @@
 }
 
 .project-card {
-  background: #444;
+  /* background: #444; */
+  background: linear-gradient(135deg,  #1a2539,#2c3e50);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideIn 1s ease-out;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .project-card:hover {
@@ -93,7 +96,8 @@
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-  background-color: #333;
+  background: linear-gradient(135deg,  #1a2539,#2c3e50);
   border-radius: 10px;
   animation: slideIn 1s ease-out;
+  font-family: 'Times New Roman', Times, serif;
 }
