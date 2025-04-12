@@ -18,19 +18,6 @@
   }
 }
 
-.heading {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #fff;
-  animation: fadeIn 1.5s ease-out;
-}
-
-.paragraph {
-  font-size: 1.5em;
-  color: #ddd;
-  animation: fadeIn 2s ease-out;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -57,13 +44,14 @@
   margin-top: 150px;
   margin-bottom: 20px;
   background-color: #fff;
-  padding: 15px;
+  padding: 1px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   animation: slideIn 1s ease-out;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 768px) {
@@ -100,6 +88,8 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   animation: slideIn 1s ease-out;
   width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 @media (max-width: 768px) {
