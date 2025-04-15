@@ -22,11 +22,18 @@ const Home = () => {
     <motion.div
       className={styles.container}
     >
-      <img
-        src={profilePic} // Replace with your profile picture URL
-        alt="Profile"
-        className={styles['profile-pic']}
-      />
+      <div className={styles.profileContainer}>
+  <img
+    src={profilePic}
+    alt="Profile"
+    className={styles['profile-pic']}
+  />
+  <img
+    src="/logo.ico" // replace with your actual logo path
+    alt="Logo"
+    className={styles.logo}
+  />
+</div>
       <h1 className={styles.heading}>Hi, I'm William Marcus</h1>
       <div className={styles.terminal}>
         <pre>
