@@ -17,13 +17,45 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+.profileContainer {
+  position: relative;
+  width: 275px;
+  height: 250px;
+  margin: 0 auto;
+}
+
 .profile-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 275px;
   height: 250px;
   border-radius: 50%;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 1s ease, opacity 1s ease;
   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
-  /* Emits glowing shadow */
+  z-index: 2;
+}
+
+.profileContainer:hover .profile-pic {
+  transform: rotate(720deg) translateY(-300px);
+  opacity: 0;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 1s ease 0.3s;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profileContainer:hover .logo {
+  opacity: 1;
 }
 
 .profile-pic:hover {
