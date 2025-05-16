@@ -140,10 +140,16 @@
 
   .profile-pic {
     margin-top: 50px;
+    box-shadow: none;
+  }
+
+  .profile-pic:hover{
+    box-shadow: none;
   }
 
   .logo {
     margin-top: 50px;
+    box-shadow: none;
   }
 
   .terminal {
