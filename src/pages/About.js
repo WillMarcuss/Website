@@ -83,10 +83,16 @@ const About = () => {
                 <p>Full-Stack Developer at Bank of Canada (Co-op)</p>
               </div>
             </div>
-            <div className={`${styles.timelineItem} ${styles.current}`}>
+            <div className={`${styles.timelineItem}`}>
               <div className={styles.timelineContent}>
                 <h3>January 2025 - August 2025</h3>
                 <p>Software Developer In Test at Dayforce (Co-op)</p>
+              </div>
+            </div>
+            <div className={`${styles.timelineItem} ${styles.current}`}>
+              <div className={styles.timelineContent}>
+                <h3>May 1st - TBD</h3>
+                <p>Full time job TBD</p>
               </div>
             </div>
           </div>
