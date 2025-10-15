@@ -8,7 +8,7 @@ import profilePic from './images/profile.jpg';
 const Home = () => {
   const [text] = useTypewriter({
     words: [
-      'A Software Developer At Dayforce',
+      'A Former Software Developer Intern At Dayforce',
       'A Fourth Year Computer Science Student at Carleton University',
       'A Passionate Coder'
     ],
