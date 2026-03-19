@@ -20,21 +20,22 @@
 }
 
 .overlay {
-  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  background: rgba(255, 255, 255, 0.93);
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
   padding: 40px;
   max-width: 600px;
   width: 100%;
   text-align: center;
   animation: fadeIn 1s ease-out;
+  overflow: hidden;
 }
 
 .heading {
   font-size: 2.8em;
   margin-bottom: 20px;
   color: #333;
-  animation: fadeIn 1s ease-out;
 }
 
 .contactInfo {
@@ -89,6 +90,166 @@
   transform: scale(1.1);
 }
 
+/* ===== Realistic peel corner ===== */
+
+.peelShare {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+  perspective: 800px;
+}
+
+/* underside revealed during peel */
+.peelUnder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background:
+    linear-gradient(135deg, #1f2d3a 0%, #31475c 55%, #4b6783 100%);
+  opacity: 0;
+  transform: translate(-2px, 2px) scale(0.96);
+  transform-origin: top right;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease,
+    filter 0.45s ease;
+  filter: brightness(0.95);
+}
+
+/* visible paper corner */
+.peelTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background:
+    linear-gradient(135deg, #ffffff 0%, #f4f4f4 55%, #dddddd 100%);
+  transform-origin: top right;
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease,
+    filter 0.45s ease;
+  box-shadow:
+    -3px 3px 6px rgba(0, 0, 0, 0.08),
+    -8px 10px 18px rgba(0, 0, 0, 0.10);
+  filter: brightness(1);
+}
+
+/* subtle highlight to make it feel like paper */
+.peelTop::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background:
+    linear-gradient(145deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.35) 30%,
+      rgba(0, 0, 0, 0.04) 72%,
+      rgba(0, 0, 0, 0.12) 100%);
+  pointer-events: none;
+}
+
+/* inner curved shadow on card */
+.peelTop::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 75px;
+  height: 75px;
+  border-radius: 0 0 0 100%;
+  background: radial-gradient(
+    circle at top right,
+    rgba(0, 0, 0, 0.20) 0%,
+    rgba(0, 0, 0, 0.08) 35%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  opacity: 0.35;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  transform-origin: top right;
+}
+
+.peelIcon {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.45s ease, color 0.3s ease;
+}
+
+/* hover state: actual peel */
+/* .peelShare:hover .peelTop {
+  transform:
+    rotateZ(-7deg)
+    rotateX(58deg)
+    translate(-8px, 8px);
+  box-shadow:
+    -4px 8px 10px rgba(0, 0, 0, 0.06),
+    -18px 24px 28px rgba(0, 0, 0, 0.16);
+  filter: brightness(1.02);
+} */
+
+.peelShare:hover .peelUnder {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+.peelShare:hover .peelTop::after {
+  opacity: 0.15;
+  transform: scale(0.9);
+}
+
+.peelShare:hover .peelIcon {
+  transform: translate(-2px, 3px);
+}
+
+/* click feedback */
+.peelShare:active .peelTop {
+  transform:
+    rotateZ(-5deg)
+    rotateX(42deg)
+    translate(-5px, 5px)
+    scale(0.98);
+}
+
+.copyToast {
+  position: absolute;
+  top: 18px;
+  right: 105px;
+  background: rgba(44, 62, 80, 0.96);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.showToast {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 @media (max-width: 768px) {
   .overlay {
@@ -105,5 +266,33 @@
 
   .container {
     margin-top: 100px;
+  }
+
+  .peelShare {
+    width: 88px;
+    height: 88px;
+  }
+
+  .peelTop,
+  .peelUnder {
+    width: 88px;
+    height: 88px;
+  }
+
+  .peelTop::after {
+    width: 58px;
+    height: 58px;
+  }
+
+  .peelIcon {
+    top: 14px;
+    right: 13px;
+    font-size: 1rem;
+  }
+
+  .copyToast {
+    right: 82px;
+    font-size: 0.8rem;
+    padding: 7px 12px;
   }
 }
