@@ -5,9 +5,9 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
-    title: 'AI Maze Runner Project',
-    description: 'The Maze Runner project is a Python-based application to solve dynamic mazes using artificial intelligence techniques. It employs Q-learning, artificial life for dynamic wall updates, and rule-based systems for moving obstacles (grievers) to challenge the maze-solving capabilities of an agent.',
-    link: 'https://github.com/WillMarcuss/mazeRunner'
+    title: 'Pac-Man Reinforcement Learning Project',
+    description: 'This project implements multiple different reinforcement learning agents to play Pac-Man. The agents include Dyna-Q, Deep Q-Networks (DQN), and Policy Gradient methods. The project demonstrates the application of reinforcement learning techniques in a classic arcade game environment, showcasing the agents\' ability to learn and improve their performance over time.',
+    link: 'https://github.com/WillMarcuss/Pac-Man-RL-Project'
   },
   {
     title: 'Finance Tracker',
