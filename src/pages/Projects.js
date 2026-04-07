@@ -38,9 +38,11 @@ const Projects = () => {
       </div>
       <div className={styles['github-link-container']}>
         <p>If you would like to see more of my work, please visit my GitHub profile:</p>
+        <div className={styles['github-link-text-container']}>
         <a href="https://github.com/WillMarcuss" className={styles['github-link']} target="_blank" rel="noopener noreferrer">
           Visit My GitHub Profile
         </a>
+        </div>
       </div>
     </div>
   );

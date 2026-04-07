@@ -102,3 +102,20 @@
   animation: slideIn 1s ease-out;
   font-family: 'Times New Roman', Times, serif;
 }
+
+/* this is a button */
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.github-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #555;
+}
