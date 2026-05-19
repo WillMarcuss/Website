@@ -47,15 +47,15 @@ const About = () => {
                 <p>High School Diploma</p>
               </div>
             </div>
-            <div className={`${styles.timelineItem} ${styles.current}`}>
+            <div className={`${styles.timelineItem}`}>
               <div className={styles.timelineContent}>
                 <h3>2021-Present</h3>
                 <p>Computer Science (Honours) Student at Carleton University</p>
               </div>
             </div>
-            <div className={styles.timelineItem}>
+            <div className={`${styles.timelineItem} ${styles.current}`}>
               <div className={styles.timelineContent}>
-                <h3>Expected April 2026</h3>
+                <h3>April 2026</h3>
                 <p>Graduation</p>
               </div>
             </div>
