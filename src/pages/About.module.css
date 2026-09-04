@@ -9,6 +9,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box; /* include padding in height to avoid accidental vertical overflow */
 }
 
 @media (max-width: 768px) {
@@ -66,7 +68,7 @@
 
 @media (max-width: 768px) {
   .aboutMe {
-    margin-top: 230px;
+    margin-top: 160px;
     width: 90%;
   }
 }
@@ -141,6 +143,11 @@
   right: 15px;
   transform-origin: -100px 0px;
   animation: orbit 12s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  image-rendering: auto;
 }
 
 /* Spaced by 60° and delayed accordingly */

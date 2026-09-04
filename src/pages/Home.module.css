@@ -8,6 +8,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 100vh;
+  box-sizing: border-box; /* include padding in height to avoid accidental vertical overflow */
 }
 
 .heading {
@@ -130,6 +131,11 @@
   .heading {
     font-size: 2em;
     padding-top: 50px;
+  }
+
+  /* Reduce top padding on small screens so content doesn't exceed viewport */
+  .container {
+    padding-top: 60px;
   }
 
   .subheading {

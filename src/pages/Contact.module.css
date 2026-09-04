@@ -17,6 +17,7 @@
   background: linear-gradient(135deg, #2c3e50, #1a252f);
   padding: 20px;
   font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box; /* include padding in min-height to avoid accidental overflow */
 }
 
 .overlay {
@@ -30,6 +31,10 @@
   text-align: center;
   animation: fadeIn 1s ease-out;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .heading {
@@ -265,7 +270,7 @@
   }
 
   .container {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .peelShare {

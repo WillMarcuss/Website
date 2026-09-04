@@ -10,6 +10,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   min-height: 100vh; /* 👈 ensures full-screen height */
+  box-sizing: border-box; /* include padding in min-height to avoid accidental overflow */
 }
 
 .projects-heading {
@@ -45,6 +46,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideIn 1s ease-out;
   font-family: 'Times New Roman', Times, serif;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .project-card:hover {
