@@ -266,3 +266,9 @@
     padding: 7px 12px;
   }
 }
+
+@media (max-width:420px){
+  .overlay{ padding:18px }
+  .linkButton, .btn{ width:100%; text-align:center }
+  .links{ gap:12px }
+}

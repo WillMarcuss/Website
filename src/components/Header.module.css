@@ -13,11 +13,38 @@
 }
 
 .nav { margin:0; padding:0; list-style:none; display:flex; gap:18px; align-items:center }
-.nav a { text-decoration:none; color:var(--text); padding:8px 10px; border-radius:8px; transition: all .18s ease }
-.nav a:hover { color:var(--accent); transform: translateY(-2px); background: rgba(255,255,255,0.02) }
+.nav a { text-decoration:none; color:var(--text); padding:8px 10px; border-radius:8px; transition: all .18s ease; white-space:normal; word-break:normal; font-weight:600; text-shadow:0 1px 2px rgba(0,0,0,0.55) }
+.nav a:hover { color:var(--accent); transform: translateY(-2px); background: rgba(255,255,255,0.045) }
+
+/* hamburger */
+.hamburger{ display:none; background:transparent; border:0; padding:8px; cursor:pointer; display:flex; flex-direction:column; gap:4px }
+.hamburger:focus{ outline:2px solid var(--accent); border-radius:8px }
+.bar{ display:block; width:22px; height:2px; background:var(--text); border-radius:2px; transition:transform .25s ease, opacity .25s ease }
+
+/* mobile behavior */
+.navWrap{ display:flex; align-items:center }
+
+@media (max-width: 820px){
+  .hamburger{ display:flex }
+  /* dropdown anchored to hamburger (right side) */
+  .nav{ position: absolute; top:64px; right:16px; left:auto; width:240px; background:var(--glass-bg); padding:8px 10px; flex-direction:column; gap:8px; align-items:stretch; max-height:0; overflow:hidden; transition:max-height .28s ease, padding .28s ease, opacity .18s ease; z-index:1100; opacity:0; pointer-events:none; border-radius:10px }
+  .nav.open{ max-height:60vh; padding:12px 10px 16px; opacity:1; pointer-events:auto; border:1px solid var(--glass-border) }
+  .nav a{ width:100%; display:inline-block; padding:10px 14px; word-break:normal; text-shadow:0 1px 2px rgba(0,0,0,0.55); font-weight:600 }
+  .logo-left{ display:flex; align-items:center; gap:12px }
+}
+
+@media (min-width: 821px){
+  .nav{ position:static; display:flex }
+  .hamburger{ display:none }
+}
 
 .logo-left { display:flex; align-items:center; gap:12px }
 .logo-left img { width:36px; height:36px; border-radius:8px; object-fit:cover }
 .logo-left h1 { margin:0; font-size:1rem; font-weight:600 }
+
+@media (max-width:420px){
+  .logo-left img{ width:28px; height:28px }
+  .logo-left h1{ font-size:0.92rem }
+}
 
   

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 .projects-container {
-  padding: 64px 28px;
+  padding: 44px 18px;
   font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color: var(--text);
   min-height: calc(100vh - 72px);
@@ -59,12 +59,13 @@
 .project-description {
   font-size: 1rem;
   color: var(--muted);
+  white-space:normal; word-break:break-word; overflow-wrap:anywhere;
   animation: slideIn 1s ease-out;
 }
 
 @media (max-width: 768px) {
   .projects-heading {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .projects-grid {
@@ -78,6 +79,12 @@
   .project-description {
     font-size: 0.9em;
   }
+}
+
+@media (max-width:420px){
+  .projects-container{ padding:32px 14px }
+  .project-card{ padding:12px }
+  .project-title{ font-size:1.05rem }
 }
 
 .project-link{

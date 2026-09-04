@@ -2,7 +2,7 @@
 .container {
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   min-height: calc(100vh - 72px);
-  padding: 36px 20px;
+  padding: 28px 16px;
   box-sizing:border-box;
   color:var(--text);
 }
@@ -18,7 +18,7 @@
 }
 
 .profileContainer{
-  width:220px;height:220px;border-radius:50%;overflow:hidden; position:relative;
+  width:200px;height:200px;border-radius:50%;overflow:hidden; position:relative;
   background:var(--glass-strong);border:1px solid rgba(255,255,255,0.06);
   box-shadow:var(--shadow);display:block;margin:6px auto;
 }
@@ -31,12 +31,12 @@
 @keyframes fadeIn{ from{ opacity:0; transform:translateY(-10px)} to{opacity:1; transform:none} }
 
 .terminal{
-  width:100%; max-width:880px; margin:18px auto 0; padding:18px; border-radius:12px;
+  width:100%; max-width:960px; margin:18px auto 0; padding:16px; border-radius:12px;
   background:var(--glass-bg); border:1px solid rgba(255,255,255,0.04); color:var(--accent);
   box-shadow:var(--shadow); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Courier New', monospace;
 }
 
-.terminal code{ font-size:1rem; line-height:1.6 }
+.terminal code{ font-size:1rem; line-height:1.6; white-space:pre-wrap; word-break:break-word; overflow-wrap:anywhere }
 
 .blink{ animation: blink 1s step-start infinite }
 @keyframes blink{ 50%{ opacity:0 }}
@@ -44,9 +44,20 @@
 .widgets{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; max-width:980px; width:100%; margin:18px auto 0 }
 .widgetCard{ background:var(--glass-bg); border:1px solid var(--glass-border); padding:16px; border-radius:12px; box-shadow:var(--shadow); text-align:center; transition:transform .18s ease, box-shadow .18s ease }
 .widgetCard h3{ margin:0 0 8px; color:var(--accent) }
-.widgetCard p{ color:var(--muted); margin:0 0 12px }
+.widgetCard p{ color:var(--muted); margin:0 0 12px; white-space:normal; word-break:break-word; overflow-wrap:anywhere }
 .widgetCard:hover{ transform:translateY(-6px); box-shadow:0 18px 38px rgba(2,6,23,0.45) }
 .skillsList{ display:flex; gap:12px; justify-content:center; align-items:center }
 .skillsList img{ width:40px; height:40px; object-fit:contain }
 
-@media(max-width:768px){ .heading{ font-size:1.6rem } .profileContainer{ width:160px;height:160px } .terminal{ padding:12px } }
+@media(max-width:768px){
+  .heading{ font-size:1.6rem }
+  .profileContainer{ width:150px;height:150px }
+  .terminal{ padding:12px }
+  .widgets{ gap:12px }
+}
+
+@media(max-width:420px){
+  .heading{ font-size:1.4rem }
+  .profileContainer{ width:130px;height:130px }
+  .widgets{ grid-template-columns:1fr }
+}

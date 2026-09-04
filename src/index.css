@@ -36,7 +36,10 @@ code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Courier New', mo
   -webkit-backdrop-filter: blur(8px) saturate(120%);
 }
 
-main{padding-top:72px}
+main{padding-top:72px; padding-bottom:88px}
+
+/* ensure body has space for fixed footer on small screens */
+body{padding-bottom:88px}
 
 /* utility */
 .container-center{max-width:1100px;margin:0 auto;padding:0 20px}
