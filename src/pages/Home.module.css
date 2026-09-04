@@ -19,7 +19,8 @@
 
 .profileContainer {
   position: relative;
-  width: 275px;
+  /* Make container square so circular crop is uniform */
+  width: 250px;
   height: 250px;
   margin: 0 auto;
 }
@@ -28,8 +29,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 275px;
-  height: 250px;
+  /* Fill container and preserve aspect ratio without stretching */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
   transition: transform 1s ease, opacity 1s ease;
   box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);

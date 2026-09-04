@@ -49,7 +49,7 @@ const About = () => {
             </div>
             <div className={`${styles.timelineItem}`}>
               <div className={styles.timelineContent}>
-                <h3>2021-Present</h3>
+                <h3>2021-2026</h3>
                 <p>Computer Science (Honours) Student at Carleton University</p>
               </div>
             </div>
@@ -74,25 +74,25 @@ const About = () => {
             <div className={styles.timelineItem}>
               <div className={styles.timelineContent}>
                 <h3>May 2023 - April 2024</h3>
-                <p>Application Developer at Bank of Canada (Co-op)</p>
+                <p>Application Developer @ Bank of Canada (Co-op)</p>
               </div>
             </div>
             <div className={`${styles.timelineItem}`}>
               <div className={styles.timelineContent}>
                 <h3>May 2024 - August 2024</h3>
-                <p>Full-Stack Developer at Bank of Canada (Co-op)</p>
+                <p>Full-Stack Developer @ Bank of Canada (Co-op)</p>
               </div>
             </div>
             <div className={`${styles.timelineItem}`}>
               <div className={styles.timelineContent}>
                 <h3>January 2025 - August 2025</h3>
-                <p>Software Developer In Test at Dayforce (Co-op)</p>
+                <p>Software Developer In Test @ Dayforce (Co-op)</p>
               </div>
             </div>
             <div className={`${styles.timelineItem} ${styles.current}`}>
               <div className={styles.timelineContent}>
-                <h3>May 1st - TBD</h3>
-                <p>Full time job TBD</p>
+                <h3>August 10th - Present</h3>
+                <p>Software Developer - 5G/6G Cloud RAN @ Ericsson</p>
               </div>
             </div>
           </div>

@@ -3,13 +3,13 @@ import React from 'react';
 import styles from './Home.module.css';
 import { motion } from 'framer-motion';
 import { useTypewriter } from 'react-simple-typewriter';
-import profilePic from './images/profile.jpg';
+import profilePic from './images/profile.PNG';
 
 const Home = () => {
   const [text] = useTypewriter({
     words: [
-      'A Former Software Developer Intern At Dayforce',
-      'A Fourth Year Computer Science Student at Carleton University',
+      'A Software Developer At Ericsson',
+      'Computer Science Graduate From Carleton University',
       'A Passionate Coder'
     ],
     loop: {},
