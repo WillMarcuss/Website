@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* About page styles */
 
 .container {
   text-align: center;
   padding: 24px;
   padding-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   overflow: visible;
   min-height: calc(100vh - 72px);
   box-sizing: border-box;
@@ -60,7 +60,7 @@
   border:1px solid var(--glass-border);
   box-shadow:var(--shadow);
   animation: slideInFromTop 0.9s ease-out;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: inherit;
 }
 
 @media (max-width: 768px) {
@@ -98,7 +98,7 @@
   transition: transform .28s ease, box-shadow .28s ease;
   animation: slideIn .9s ease-out;
   width:100%;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: inherit;
 }
 
 @media (max-width: 768px) {

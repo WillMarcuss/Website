@@ -11,7 +11,7 @@
 
 .container {
   display:flex; align-items:center; justify-content:center; min-height:calc(100vh - 72px);
-  padding:20px; font-family:'Times New Roman', Times, serif; box-sizing:border-box;
+  padding:20px; font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; box-sizing:border-box;
 }
 
 .overlay {
@@ -49,12 +49,16 @@
 
 .iconButton {
   display:inline-flex; align-items:center; justify-content:center; margin-left:10px;
-  background:var(--glass-strong); color:var(--text); border-radius:50%; width:34px; height:34px; transition:transform .18s ease, background .18s ease; text-decoration:none; box-shadow:0 6px 14px rgba(2,6,23,0.28)
+  background:var(--glass-strong); color:var(--text); border-radius:50%; width:34px; height:34px; transition:transform .18s ease, background .18s ease; text-decoration:none; box-shadow:0 6px 14px rgba(2,6,23,0.28);
+  font-size:16px; line-height:0; padding:0;
 }
 
 .iconButton:hover {
   background:var(--accent); color:#07243b; transform:scale(1.06); box-shadow:0 12px 30px rgba(2,6,23,0.45)
 }
+
+/* Ensure SVG icons inherit color and display at a consistent size */
+.iconButton svg{ width:18px; height:18px; display:block; stroke:currentColor; fill:none }
 
 /* ===== Realistic peel corner ===== */
 
