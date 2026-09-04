@@ -44,9 +44,9 @@ const Contact = () => {
         <div className={styles.contactInfo}>
           <p>
             <strong>Email:</strong> Williammarcus@cmail.carleton.ca
-            <a href="mailto:Williammarcus@cmail.carleton.ca" className={styles.iconButton}>
-              <FiMail />
-            </a>
+              <a href="mailto:Williammarcus@cmail.carleton.ca" className={`${styles.iconButton} btn ghost`}>
+                <FiMail />
+              </a>
           </p>
 
           <p>
@@ -59,7 +59,7 @@ const Contact = () => {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.linkButton}
+            className={`${styles.linkButton} btn`}
           >
             View My Resume
           </a>
@@ -68,7 +68,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/wmarcus1/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.linkButton}
+            className={`${styles.linkButton} btn`}
           >
             Visit My LinkedIn
           </a>

@@ -1,67 +1,23 @@
 @media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-  }
-  .nav a {
-    margin: 10px 0;
-  }
+  .nav { flex-direction: column; gap: 8px }
+  .nav a { margin: 6px 0 }
+  .header { padding: 8px 14px }
 }
 
 .header {
-  background: linear-gradient(135deg, #2c3e50, #1a252f);
-  padding: 5px; /* Increased padding for better spacing */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease; /* Smooth transition for background color change */
-    color: #fff; /* White text color */
-    font-family:'Times New Roman', Times, serif;
-    position: fixed; /* Fix the header at the top */
-    width: 100%; /* Make sure it spans the full width of the page */
-    top: 0; /* Position it at the top */
-    z-index: 1000; /* Ensure it stays above other content */
+  position: fixed; top: 0; left: 0; right: 0; height: 64px; z-index:1000;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding: 8px 28px; backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  background: rgba(255,255,255,0.02); border-bottom:1px solid rgba(255,255,255,0.04);
 }
 
-  
-  .header:hover {
-    background-color: #333; /* Darker color on hover */
-  }
-  
-  .nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-  }
-  
-  .nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-    position: relative;
-    color: #fff; /* White text color */
-  }
-  
-  .nav a:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    background-color: #fff;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-  }
-  
-  .nav a:hover:before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  .nav a:hover {
-    color: #bbb; /* Light grey on hover */
-  }
+.nav { margin:0; padding:0; list-style:none; display:flex; gap:18px; align-items:center }
+.nav a { text-decoration:none; color:var(--text); padding:8px 10px; border-radius:8px; transition: all .18s ease }
+.nav a:hover { color:var(--accent); transform: translateY(-2px); background: rgba(255,255,255,0.02) }
+
+.logo-left { display:flex; align-items:center; gap:12px }
+.logo-left img { width:36px; height:36px; border-radius:8px; object-fit:cover }
+.logo-left h1 { margin:0; font-size:1rem; font-weight:600 }
+
   

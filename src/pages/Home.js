@@ -3,7 +3,8 @@ import React from 'react';
 import styles from './Home.module.css';
 import { motion } from 'framer-motion';
 import { useTypewriter } from 'react-simple-typewriter';
-import profilePic from './images/profile.PNG';
+import profileSmall from './images/profile.jpg';
+import profileLarge from './images/profile.jpg';
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -24,7 +25,8 @@ const Home = () => {
     >
       <div className={styles.profileContainer}>
   <img
-    src={profilePic}
+    src={profileSmall}
+    srcSet={`${profileLarge} 2x`}
     alt="Profile"
     className={styles['profile-pic']}
   />

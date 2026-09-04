@@ -30,7 +30,7 @@ const Projects = () => {
           <div key={index} className={styles['project-card']}>
             <h3 className={styles['project-title']}>{project.title}</h3>
             <p className={styles['project-description']}>{project.description}</p>
-            <a href={project.link} className={styles['project-link']} target="_blank" rel="noopener noreferrer">
+            <a href={project.link} className={`${styles['project-link']} btn`} target="_blank" rel="noopener noreferrer">
               View Project
             </a>
           </div>
@@ -39,7 +39,7 @@ const Projects = () => {
       <div className={styles['github-link-container']}>
         <p>If you would like to see more of my work, please visit my GitHub profile:</p>
         <div className={styles['github-link-text-container']}>
-        <a href="https://github.com/WillMarcuss" className={styles['github-link']} target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/WillMarcuss" className={`${styles['github-link']} btn`} target="_blank" rel="noopener noreferrer">
           Visit My GitHub Profile
         </a>
         </div>
